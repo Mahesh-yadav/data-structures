@@ -5,11 +5,13 @@
   "description": "Common Data Structures implemented in Javascript",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "lint": "eslint"
   },
   "author": "Mahesh Yadav",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^7.32.0",
     "jest": "^27.0.6"
   },
   "type": "module"
