@@ -1,0 +1,16 @@
+{
+  "name": "data-structures",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "Common Data Structures implemented in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "author": "Mahesh Yadav",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  },
+  "type": "module"
+}
