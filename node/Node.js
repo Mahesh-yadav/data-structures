@@ -22,6 +22,10 @@ class Node {
       throw new Error('Next node must be a Node instance');
     }
   }
+
+  toString() {
+    return this.#data.toString();
+  }
 }
 
 module.exports = Node;

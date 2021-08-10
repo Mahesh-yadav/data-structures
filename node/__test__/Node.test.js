@@ -16,4 +16,12 @@ describe('Node class', () => {
     expect(firstNode.next).toBe(secondNode);
     expect(secondNode.next).toBe(null);
   });
+
+  test('should throw error if next node is not an instance of Node', () => {
+    const firstNode = new Node('Node One');
+
+    expect(() => {
+      firstNode.next = 'Invalid Node Link';
+    }).toThrow(new Error('Next node must be a Node instance'));
+  });
 });
