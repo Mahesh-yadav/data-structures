@@ -7,6 +7,14 @@ class LinkedList {
     this.#head = null;
   }
 
+  get head() {
+    return this.#head;
+  }
+  // For testing purpose
+  set head(node) {
+    this.#head = node;
+  }
+
   addToHead(data) {
     const newNode = new Node(data);
     newNode.next = this.#head;
