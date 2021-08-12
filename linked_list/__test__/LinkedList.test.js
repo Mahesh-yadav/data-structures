@@ -12,8 +12,9 @@ describe('LinkedList', () => {
 
     list.addToHead(1);
     list.addToHead(2);
+    list.addToHead(3);
 
-    expect(list.toString()).toBe('2, 1');
+    expect(list.toString()).toBe('3, 2, 1');
   });
 
   test('should add data to the tail of the list', () => {

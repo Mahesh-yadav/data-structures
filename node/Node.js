@@ -19,7 +19,7 @@ class Node {
     if (node instanceof Node || node === null) {
       this.#next = node;
     } else {
-      throw new Error('Next node must be a Node instance');
+      throw new Error('Next node must be a Node instance or null');
     }
   }
 

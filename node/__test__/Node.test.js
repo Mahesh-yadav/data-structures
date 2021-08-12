@@ -1,7 +1,7 @@
 const Node = require('../node');
 
-describe('Node class', () => {
-  test('should create node with a value and no links', () => {
+describe('Node', () => {
+  test('should create a node with a value and no next link', () => {
     const node = new Node(90);
 
     expect(node.data).toBe(90);
@@ -17,11 +17,11 @@ describe('Node class', () => {
     expect(secondNode.next).toBe(null);
   });
 
-  test('should throw error if next node is not an instance of Node', () => {
+  test('should throw error if next node is not an instance of Node or null', () => {
     const firstNode = new Node('Node One');
 
     expect(() => {
       firstNode.next = 'Invalid Node Link';
-    }).toThrow(new Error('Next node must be a Node instance'));
+    }).toThrow(new Error('Next node must be a Node instance or null'));
   });
 });
