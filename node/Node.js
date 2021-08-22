@@ -11,6 +11,10 @@ class Node {
     return this.#data;
   }
 
+  set data(value) {
+    this.#data = value;
+  }
+
   get next() {
     return this.#next;
   }

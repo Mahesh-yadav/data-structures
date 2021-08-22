@@ -8,6 +8,13 @@ describe('Node', () => {
     expect(node.next).toBeNull();
   });
 
+  test('should update node data', () => {
+    const node = new Node(1);
+    node.data = 2;
+
+    expect(node.data).toBe(2);
+  });
+
   test('should link nodes together', () => {
     const firstNode = new Node('Node One');
     const secondNode = new Node('Node Two');
